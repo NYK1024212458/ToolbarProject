@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+   <!--
+    <include
+        android:id="@+id/tb_mian"
+        layout="@layout/toolbar">
+    </include>-->
+    <!--使用Viewstub来实现按需加载-->
+    <ViewStub
+        android:layout="@layout/toolbar"
+        android:id="@+id/vb_mian_show"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"/>
+
+    <Button
+        android:onClick="test"
+        android:layout_margin="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+</LinearLayout>
